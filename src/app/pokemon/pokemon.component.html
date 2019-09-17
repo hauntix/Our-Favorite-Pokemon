@@ -1,6 +1,6 @@
 <h2>Our Pokemon</h2>
 <ul class="pokemon">
-  <li *ngFor="let pokemon of pokemons"
+  <li *ngFor="let pokemon of shuffle(pokemons)"
       [class.selected]="pokemon === selectedPokemon"
       (click)="onSelect(pokemon)">
     <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}

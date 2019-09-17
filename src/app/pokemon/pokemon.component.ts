@@ -20,4 +20,19 @@ export class PokemonComponent implements OnInit {
   onSelect(pokemon: Pokemon): void {
     this.selectedPokemon = pokemon;
   }
+
+  shuffle(pokemons: Pokemon[]) {
+    let counter = pokemons.length;
+    while (counter > 0) {
+      const index = Math.floor(Math.random() * counter);
+
+      counter--;
+
+      const temp = pokemons[counter];
+      pokemons[counter] = pokemons[index];
+      pokemons[index] = temp;
+    }
+
+    return pokemons;
+  }
 }
