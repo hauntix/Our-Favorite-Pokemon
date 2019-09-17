@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'our-favorite-pokemonv2';
+  title = 'List of our favorite pokemon!';
 }
