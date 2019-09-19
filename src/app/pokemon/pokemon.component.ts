@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../pokemon';
-import { POKEMON } from '../top-20-pokemon';
+import { PokemonService } from '../pokemon.service';
 
 @Component({
   selector: 'app-pokemon',
@@ -10,15 +10,21 @@ import { POKEMON } from '../top-20-pokemon';
 export class PokemonComponent implements OnInit {
   selectedPokemon: Pokemon;
 
-  pokemons = POKEMON;
+  pokemons: Pokemon[];
 
-  constructor() { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit() {
+    this.getPokemon();
   }
 
   onSelect(pokemon: Pokemon): void {
     this.selectedPokemon = pokemon;
+  }
+
+  getPokemon(): void {
+    this.pokemonService.getPokemon()
+      .subscribe(pokemon => this.pokemons = pokemon);
   }
 
   shuffle(pokemons: Pokemon[]) {
