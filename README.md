@@ -21,4 +21,4 @@
 2. run ```heroku login``` and it will prompt you to login to your heroku account
 3. run ```heroku create``` this will create an app on heroku and prepare it to receive your code
 4. run ```git push heroku master``` to push your code to heroku
-5 run ```herouk open``` to view your app.
+5 run ```heroku open``` to view your app.
