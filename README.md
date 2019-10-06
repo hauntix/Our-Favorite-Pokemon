@@ -1,5 +1,5 @@
 # Uploading our angular project to heroku!
-###Prerequisites
+### Prerequisites
 
 - Install heroku-cli
     - MacOS: ```brew install heroku```
