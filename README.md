@@ -14,6 +14,20 @@
 - Make sure if using your own angular project that you've done the following:
     - have installed the express module ```npm install express --save```
     - have a server.js file [example]()
+    - you have edited your package.json start script from 
+    ``` 
+        "scripts": {
+            "ng": "ng",
+            "start": "ng serve",
+           ...
+    ``` 
+        to
+    ```
+        "scripts": {
+                   "ng": "ng",
+                   "start": "node server.js",
+                   ...
+    ```
 
 ##Instructions
 1. run cmd line and open your angular project directory
