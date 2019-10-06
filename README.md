@@ -13,7 +13,7 @@
 
 - Make sure if using your own angular project that you've done the following:
     - have installed the express module ```npm install express --save```
-    - have a server.js file [example]()
+    - have a server.js file [example](https://github.com/hauntix/Our-Favorite-Pokemon/blob/master/server.js)
     - you have edited your package.json start script from 
     ``` 
         "scripts": {
@@ -21,7 +21,7 @@
             "start": "ng serve",
            ...
     ``` 
-        to
+    to
     ```
         "scripts": {
                    "ng": "ng",
