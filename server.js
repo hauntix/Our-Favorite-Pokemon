@@ -3,7 +3,7 @@ const app = express();
 // this is our project folder name
 const projectName = "our-favorite-pokemon";
 
-app.use(express.static('dist'));
+app.use(express.static('dist/' + projectName));
 
 	app.all('*', function (req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*');
