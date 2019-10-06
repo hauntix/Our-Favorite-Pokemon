@@ -29,7 +29,7 @@
                    ...
     ```
 
-##Instructions
+## Instructions
 1. run cmd line and open your angular project directory
     - i.e.: ```cd Documents/Our-Favorite-Pokemon```
 2. run ```heroku login``` and it will prompt you to login to your heroku account
