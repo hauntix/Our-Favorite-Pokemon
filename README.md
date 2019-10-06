@@ -18,15 +18,13 @@
     ``` 
         "scripts": {
             "ng": "ng",
-            "start": "ng serve",
-           ...
+            "start": "ng serve",           
     ``` 
     to
     ```
         "scripts": {
-                   "ng": "ng",
-                   "start": "node server.js",
-                   ...
+           "ng": "ng",
+           "start": "node server.js",
     ```
 
 ## Instructions
