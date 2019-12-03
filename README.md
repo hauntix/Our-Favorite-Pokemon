@@ -4,6 +4,7 @@
 - Install heroku-cli
     - MacOS: ```brew install heroku```
     - Windows: [64-bit download](https://cli-assets.heroku.com/heroku-x64.exe) or [32-bit download](https://cli-assets.heroku.com/heroku-x86.exe)
+    - Linux: ```sudo snap install --classic heroku```
 
 - Sign up for a heroku account: [sign-up link](https://signup.heroku.com/login)
 
